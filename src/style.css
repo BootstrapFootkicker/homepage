@@ -10,13 +10,65 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #bab9b9;
 }
 header img{
     max-width: 100px;
     max-height: 100px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*padding: 10px;*/
+    /*background-color: #333;*/
+    /*color: #fff;*/
+    border-top: 3px solid red;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: blue solid 2px;
+    width: 100%;
+    min-height: 100px;
+}
+
+.footer-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: blue solid 2px;
+    width: 100%;
+}
+
+.duo-Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: blue solid 2px;
+    width: 100%;
+    min-height: 100px;
+
+}
+
+.email{
+    border-right: solid #bab9b9 2px;
+    padding:10px;
+    width: 100%;
+}
+.socials{
+
+      padding:10px;
+       width: 100%;
+
+}
+footer img{
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .content-container{
