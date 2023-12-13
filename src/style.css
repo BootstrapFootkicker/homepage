@@ -1,23 +1,27 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
+    font-size: 2rem;
+    font-stretch: expanded;
     align-items: center;
     padding: 10px;
     border-bottom: 3px solid #bab9b9;
 }
-header img{
+
+
+header img {
     max-width: 100px;
     max-height: 100px;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,53 +29,107 @@ footer{
     /*padding: 10px;*/
     /*background-color: #333;*/
     /*color: #fff;*/
-    border-top: 3px solid red;
 }
 
-.footer-text{
+.footer-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: blue solid 2px;
     width: 100%;
     min-height: 100px;
 }
 
-.footer-img-container{
+.footer-img-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    outline: blue solid 2px;
     width: 100%;
+    border-bottom: #bab9b9 solid 3px;
+    border-top: #bab9b9 solid 3px;
 }
 
-.duo-Div{
+.duo-Div {
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: blue solid 2px;
     width: 100%;
     min-height: 100px;
+    gap: 10px;
+
 
 }
 
-.email{
-    border-right: solid #bab9b9 2px;
-    padding:10px;
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: FLEX-START;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+
+
+
+
+}
+
+.email-container{
     width: 100%;
+    max-height: 50px;
+    display: flex;
+    justify-content: flex-end;
 }
-.socials{
 
-      padding:10px;
-       width: 100%;
+.email-button{
+    display: flex;
 
 }
-footer img{
+.bottom-border {
+    width: 100%;
+    border-bottom: #bab9b9 solid 3px;
+}
+
+.email button {
+    max-width: 100px;
+
+}
+
+.socials {
+    border-left: solid #bab9b9 3px;
+    padding: 10px;
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+footer img {
     max-width: 50px;
     max-height: 50px;
 }
 
-.content-container{
+.rightBorderBox {
+    display: flex;
+    border-left: 3px solid #bab9b9;
+    min-width: 100px;
+    justify-self: flex-end;
+}
+
+.leftBorderBox {
+    border-right: 3px solid #bab9b9;
+    min-width: 100px;
+    justify-self: flex-start;
+}
+
+.footer-text-container {
+    display: flex;
+    border-bottom: #bab9b9 solid 3px;
+    width: 100%;
+}
+
+.content-container {
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
@@ -80,41 +138,55 @@ footer img{
 
 }
 
-.content-item{
-    outline: 1px solid blue;
+.content-item {
+    box-sizing: border-box;
+    border-bottom: 3px solid #bab9b9;
+    border-left: 3px solid #bab9b9;
+    border-right: 3px solid #bab9b9;
 
 }
 
-.left-container, .right-container{
+.left-container, .right-container {
     display: flex;
     flex-direction: column;
 }
-.content-duo{
+
+.content-duo {
     display: flex;
 }
 
-.itemOne{
+.itemOne {
     min-height: 850px;
     max-width: 850px;
 }
 
 
-.itemTwo,.itemThree{
+.itemTwo, .itemThree {
     min-height: 450px;
-    max-width:425px;
+    max-width: 425px;
 }
 
 
-.itemFour{
+.itemFour {
     min-height: 425px;
     max-width: 500px;
 }
 
-.itemSix,.itemSeven{
+.itemSix, .itemSeven {
     min-height: 375px;
     max-width: 250px;
 }
-.itemFive{
+
+.itemFive {
     min-height: 500px;
-      max-width: 500px;
+    max-width: 500px;
+}
+
+.itemTwo, .itemThree, .itemSix, .itemSeven {
+    border-top: none;
+    border-bottom: none;
+}
+
+.itemThree, .itemSix, .itemSeven, .itemFour, .itemFive {
+    border-left: none;
 }
